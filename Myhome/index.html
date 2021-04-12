@@ -45,6 +45,7 @@
         background-color: springgreen;
         border-radius: 20px;
         margin-bottom: 40px;
+        box-shadow: 20px 20px 50px -10px black;
       }
       a:link { color: red; text-decoration: none;}
       a:visited { color: black; text-decoration: none;}
@@ -53,7 +54,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
+      <div class="container-fluid" id="top">
         <a class="navbar-brand" href="index.html"
           ><img
             src="./img/koala-removebg.png"
@@ -97,11 +98,11 @@
                 지역
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">경기도</a></li>
+                <li class="lik1"><a class="dropdown-item" href="#ever1">경기도</a></li>
+                <li ><hr class="dropdown-divider" /></li>
+                <li class="lik2"><a class="dropdown-item" href="#ever2">전라도</a></li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">전라도</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">경상도</a></li>
+                <li class="lik3"><a class="dropdown-item" href="#ever3">경상도</a></li>
               </ul>
               <li class="nav-item">
                 <a class="nav-link" href="list.html">게시판</a>
@@ -144,7 +145,7 @@
         "
         aria-label="breadcrumb"
       >
-        <ol class="breadcrumb" style="text-align: right">
+        <ol class="breadcrumb" style="text-align: right;">
           <li class="breadcrumb-item" style="color: red;">Home</a></li>
           <li class="breadcrumb-item active" aria-current="page"><a href="sample.html">여행지 소개</a></li>
           <li class="breadcrumb-item active" aria-current="page"><a href="list.html">게시판</a></li>
@@ -262,7 +263,7 @@
           <div class="card">
             <img src="./img/용인 에버랜드.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">경기도 용인 에버랜드</h5>
+              <h5 class="card-title" id="ever1">경기도 용인 에버랜드</h5>
               <p class="card-text">
                 1976년 국내 최초의 가족공원인 자연농원을 개장하며 국내 레저,
                 서비스문화의 시작을 알린 에버랜드 리조트는 지난 40여 년간 국내
@@ -283,7 +284,7 @@
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title">경상북도 포항 영일교</h5>
+              <h5 class="card-title" id="ever2">경상북도 포항 영일교</h5>
               <p class="card-text">
                 차분한 분위기의 낮이 였다면 밤은 야경 명소로 많은 사람들이 포항
                 데이트 코스로 찾아와 떠들썩해서 흥겨운곳이다. 그만큼 매력적이고
@@ -300,7 +301,7 @@
           <div class="card">
             <img src="./img/보성.png" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">전라남도 보성 녹차밭</h5>
+              <h5 class="card-title" id="ever3">전라남도 보성 녹차밭</h5>
               <p class="card-text">
                 전남 보성군 보성읍과 회천면 사이에 걸쳐 있는 차 재배단지로 매일
                 많은 관광객들이 방문을 하고있다. 보성군은 한국에서 가장 많은
@@ -315,6 +316,8 @@
             </div>
           </div>
         </div>
+        <p></p>
+        <a href="#top"><button style="border-radius: 15px 15px; background-color: yellow; box-shadow: 5px 5px 15px -5px black; float: right;">상단으로</button></a>
       </div>
     </div>
 
