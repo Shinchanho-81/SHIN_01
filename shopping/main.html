@@ -19,16 +19,16 @@
       crossorigin="anonymous"
     />
     <style>
-      #imglog{
+      #imglog {
         display: block;
         margin-left: 43%;
         width: 150px;
       }
-      #imglog1{
+      #imglog1 {
         display: block;
         margin: 0px auto;
       }
-      .bt1{
+      .bt1 {
         margin-top: 20px;
         margin-right: 20px;
         border-radius: 10px;
@@ -36,30 +36,30 @@
         color: tomato;
         background: silver;
       }
-      a#btcol{
+      a#btcol {
         text-decoration: none;
         color: tomato;
       }
-      a{
+      a {
         color: black;
       }
-      .wimg{
+      .wimg {
         float: right;
         margin-top: 40px;
         margin-right: 50px;
+        border: 1px solid;
       }
-      .op_1{
-        
+      .op_1 {
         opacity: 0.7;
         list-style: none;
         width: 90px;
       }
-      .op_1:hover{
-        opacity: 1.0;
+      .op_1:hover {
+        opacity: 1;
         font-size: 16pt;
         font-weight: bold;
       }
-      a{
+      a {
         text-decoration: none;
       }
     </style>
@@ -68,14 +68,16 @@
     <button class="bt1" style="float: right">
       <a id="btcol" href="signup.html">Sign Up</a>
     </button>
-    <button class="bt1" style="float: right">Login</button>
-    <a href="main.html"><img id="imglog" src="./img/smile.png" /></h3></a>
+    <button class="bt1" style="float: right">
+      <a id="btcol" href="login.html">Login</a>
+    </button>
+    <a href="main.html"><img id="imglog" src="./img/smile.png" /></a>
   </div>
   <body>
     <div>
       <ul class="nav nav-tabs">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"
+          <a class="nav-link active" aria-current="page" href="best.html"
             >인기<span class="badge bg-danger">HOT</span></a
           >
         </li>
@@ -89,7 +91,7 @@
             >쇼핑</a
           >
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">상의/ 아웃터</a></li>
+            <li><a class="dropdown-item" href="wtop.html">상의/ 아웃터</a></li>
             <li><a class="dropdown-item" href="#">바지</a></li>
             <li><a class="dropdown-item" href="#">원피스</a></li>
             <li><a class="dropdown-item" href="#">신발</a></li>
@@ -113,22 +115,41 @@
         height="300px"
       />
     </div>
-    
+
     <div>
-      <h2 style="text-align: center;  margin-top: 30px;">스타일</h2>
-      <img class="wimg" src="img/w1.jpg" width="140px" style="margin-right: 120px;">
-      <img class="wimg" src="img/w2.jpg" width="140px">
-      <img class="wimg" src="img/w3.jpg" width="140px">
-      <img class="wimg" src="img/w4.jpg" width="140px">
-      <img class="wimg" src="img/w5.jpg" width="140px">
-      <img class="wimg" src="img/w6.jpg" width="140px">
-      <img class="wimg" src="img/w7.jpg" width="140px">
-      <img class="wimg" src="img/w8.jpg" width="140px">
-      <ul style="margin-top: 35px; margin-left: 20px;">
-        <h2>랭킹
-        </h2>
-        <p style="margin-top: 20px; font-weight: bold;">상품</p>
-        <li class="op_1" ><a href="#">상의</a></li>
+      <div>
+        <h2 style="text-align: center; margin-top: 30px">스타일</h2>
+          <a href="yale_6.html"
+            ><img
+              class="wimg"
+              src="img/w1.jpg"
+              width="140px"
+              style="margin-right: 200px"
+            />
+        <div>
+        <a href="yale_5.html"
+          ><img class="wimg" src="img/w2.jpg" width="140px"
+        /></a>
+        <a href="yale_4.html"
+          ><img class="wimg" src="img/w3.jpg" width="140px"
+        /></a>
+        <a href="yale_3.html"
+          ><img class="wimg" src="img/w4.jpg" width="140px"
+        /></a>
+        <a href="yale_2.html"
+          ><img class="wimg" src="img/w5.jpg" width="140px"
+        /></a>
+        <a href="yale_1.html"
+          ><img class="wimg" src="img/w6.jpg" width="140px"
+        /></a>
+        <a href="yale.html"
+          ><img class="wimg" src="img/w7.jpg" width="140px"
+        /></a>
+      </div> 
+      <ul style="margin-top: 35px; margin-left: 20px">
+        <h2>랭킹</h2>
+        <p style="margin-top: 20px; font-weight: bold">상품</p>
+        <li class="op_1"><a href="wtop.html">상의</a></li>
         <li class="op_1"><a href="#">아우터</a></li>
         <li class="op_1"><a href="#">바지</a></li>
         <li class="op_1"><a href="#">원피스</a></li>
@@ -137,6 +158,44 @@
         <li class="op_1"><a href="#">악세서리</a></li>
       </ul>
     </div>
+    <div>
+      <hr>
+      <div>
+        <div class="container">
+        <h2 style="text-align: center; margin-top: 30px">쇼핑 이슈</h2>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="width: 600px; height: 350px; margin-left: 30%; margin-top: 50px; margin-bottom: 200px;">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="img/es-1.jpg" style="width: 600px; height: 300px;">
+              <p>위캔더스</p>
+              <p><strong>21 S/S 신상품 선발매</strong></p>
+              <p style="opacity: 0.6;">PRERLEASE</p>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/es-2.jpg" style="width: 600px; height: 300px;">
+              <p>리이</p>
+              <p><strong>21 S/S 컬렉션 발매/ 최대 15% 할인</strong></p>
+              <p style="opacity: 0.6;">NEW ARRIVAL</p>
+            </div>
+            <div class="carousel-item">
+              <img src="img/es-3.jpg" style="width: 600px; height: 300px;">
+              <p>플라스크</p>
+              <p><strong>21 SUMMER 발매/ 최대 40% 할인</strong></p>
+              <p style="opacity: 0.6;">NEW ARRIVAL</p>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </div>
+    </div>
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"

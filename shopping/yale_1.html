@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+
+    <title>Shopping</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <style>
+      #imglog{
+        display: block;
+        margin-left: 43%;
+        width: 150px;
+      }
+      #imglog1{
+        display: block;
+        margin: 0px auto;
+      }
+      .bt1{
+        margin-top: 20px;
+        margin-right: 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        color: tomato;
+        background: silver;
+      }
+      a#btcol{
+        text-decoration: none;
+        color: tomato;
+      }
+      a{
+        color: black;
+      }
+      .wimg{
+        float: right;
+        margin-top: 40px;
+        margin-right: 50px;
+      }
+      .op_1{
+        
+        opacity: 0.7;
+        list-style: none;
+        width: 90px;
+      }
+      .op_1:hover{
+        opacity: 1.0;
+        font-size: 16pt;
+        font-weight: bold;
+      }
+      a{
+        text-decoration: none;
+      }
+      #buy_1{
+        border: 1px solid black;
+        width: 180px;
+        height: 70px;
+        background: black;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 150px;
+        float: right;
+      }
+    </style>
+  </head>
+  <div>
+    <button class="bt1" style="float: right">
+      <a id="btcol" href="signup.html">Sign Up</a>
+    </button>
+    <button class="bt1" style="float: right">
+      <a id="btcol" href="login.html">Login</a></button>
+    <a href="main.html"><img id="imglog" src="./img/smile.png" /></h3></a>
+  </div>
+  <body>
+    <div>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="best.html"
+            >인기<span class="badge bg-danger">HOT</span></a
+          >
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >쇼핑</a
+          >
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="wtop.html">상의/ 아웃터</a></li>
+            <li><a class="dropdown-item" href="#">바지</a></li>
+            <li><a class="dropdown-item" href="#">원피스</a></li>
+            <li><a class="dropdown-item" href="#">신발</a></li>
+            <li><a class="dropdown-item" href="#">모자</a></li>
+            <li><a class="dropdown-item" href="#">악세서리</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">최근 본 상품</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">장바구니</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <img
+        id="imglog1"
+        src="./img/suit-690048_1920.jpg"
+        width="100%"
+        height="300px"
+      />
+    </div>
+    <h2 style="text-align: center; font-weight: bold; margin-top: 50px;">상품 상세보기</h2>
+    <img src="img/w6.jpg" width="300px" style="float: right; margin-right: 300px; margin-top: 90px; margin-bottom: 70px;">
+    <div>
+    <table style="float: right; margin-right: 70px; margin-top: 100px;">
+      <th>information</th>
+      <tr>
+        <td style="padding-top: 30px;"><strong>브랜드</strong></td>
+        <td style="padding-top: 30px;"> FGHSAA</td>
+      </tr>
+      <tr>
+        <td style="padding-top: 30px;"><strong>이름</strong></td>
+        <td style="padding-top: 30px;"> 홍길동</td>
+      </tr>
+      <tr>
+        <td style="padding-top: 30px;"><strong>직책/ 직무</strong></td>
+        <td style="padding-top: 30px;"> 모델</td>
+      </tr>
+      <tr>
+        <td style="padding-top: 30px;"><strong>키/ 몸무게</strong></td>
+        <td style="padding-top: 30px;"> 184/ 72</td>
+      </tr>
+      <tr>
+        <td style="padding-top: 30px;"><strong>조회수(추천수)</strong></td>
+        <td style="padding-top: 30px;">1763회 (3)</td>
+      </tr>
+      <tr>
+        <th style="padding-top: 30px;">착용제품</th>
+        <td style="padding-top: 30px;">- 상의: EFF 베츠 티셔츠 블랙 L</td>
+      </tr>
+      <tr>
+        <th style="padding-top: 30px;">가격 : </th>
+        <td style="padding-top: 30px;">31,100원</td>
+      </tr>
+      <tr>
+        <td><button id="buy_1">바 로 구 매</button></td>
+      </tr>
+    </table>
+    </div>
+    <div>
+      <ul style="margin-top: 35px; margin-left: 20px;">
+        <h2>랭킹
+        </h2>
+        <p style="margin-top: 20px; font-weight: bold;">상품</p>
+        <li class="op_1" ><a href="wtop.html">상의</a></li>
+        <li class="op_1"><a href="#">아우터</a></li>
+        <li class="op_1"><a href="#">바지</a></li>
+        <li class="op_1"><a href="#">원피스</a></li>
+        <li class="op_1"><a href="#">신발</a></li>
+        <li class="op_1"><a href="#">모자</a></li>
+        <li class="op_1"><a href="#">악세서리</a></li>
+      </ul>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

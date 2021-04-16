@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>title name</title>
+<style>
+  #box1{
+    animation-delay: 3s;
+    width: 100px;
+    height: 50px;
+    background: red;
+    position: relative;
+    animation: boxmove 0.1s linear infinite alternate;
+  }
+  #box2{
+    animation-delay: 6s;
+    width: 100px;
+    height: 50px;
+    background: red;
+    position: relative;
+    animation: boxmove1 0.1s linear infinite alternate;
+  }
+  #box3{
+    float: right;
+    animation-delay: 6s;
+    width: 100px;
+    height: 50px;
+    background: red;
+    position: relative;
+    animation: boxmove1 0.1s linear infinite alternate;
+  }
+  @keyframes boxmove {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 800px;
+    }
+  }
+  @keyframes boxmove1 {
+    from {
+      top: 0px;
+    }
+    to {
+      top: 1500px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div id="box1">애니메이션 박스 1</div>
+  <div id="box2">애니메이션 박스 2</div>
+  <div id="box3">애니메이션 박스 2</div>
+</body>
