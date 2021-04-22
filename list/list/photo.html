@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Serif+KR:wght@200&display=swap"
+    rel="stylesheet">
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#pst1").click(function(){
+        $("#ptt1").slideDown("fast");
+      });
+      $("#ptt1").click(function(){
+        $("#ptt1").slideUp("fast");
+      });
+      $("#pst2").click(function(){
+        $("#ptt2").slideDown("fast");
+      });
+      $("#ptt2").click(function(){
+        $("#ptt2").slideUp("fast");
+      });
+      $("#pst3").click(function(){
+        $("#ptt3").slideDown("fast");
+      });
+      $("#ptt3").click(function(){
+        $("#ptt3").slideUp("fast");
+      });
+      $("#pst4").click(function(){
+        $("#ptt4").slideDown("fast");
+      });
+      $("#ptt4").click(function(){
+        $("#ptt4").slideUp("fast");
+      });
+    });
+    </script>
+  <title>게시판</title>
+  <style>
+    * {
+      font-family: "Jua", sans-serif;
+      font-size: 16px;
+    }
+
+    a:link {
+      color: red;
+      text-decoration: none;
+    } 
+
+    a:visited {
+      color: black;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: blue;
+    }
+
+    h1.bor1 {
+      width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: springgreen;
+      border-radius: 20px;
+      margin-bottom: 40px;
+      box-shadow: 20px 20px 50px -10px black;
+    }
+
+    td {
+      font-family: 'Nanum Myeongjo', serif;
+      font-family: 'Noto Serif KR', serif;
+    }
+
+    th {
+      font-family: 'Nanum Myeongjo', serif;
+      font-family: 'Noto Serif KR', serif;
+    }
+
+    td.hover {
+      background-color: grey;
+    }
+
+    th.hover {
+      background-color: grey;
+    }
+    th, tr, td{
+      font-weight: bold;
+      color: black
+    }
+    img#ptt1{
+      display: none;
+    }
+    img#ptt2{
+      display: none;
+    }
+    img#ptt3{
+      display: none;
+    }
+    img#ptt4{
+      display: none;
+    }
+  </style>
+</head>
+
+<body style="background-image: url(./img/woman.png);">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="list.html"><img src="./img/제목_없음-removebg-preview.png" alt="logo"
+          width="80px" />여행 마당</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="list.html">Home</a>
+          <li class="nav-item">
+            <a class="nav-link" href="list.html">자유 게시판</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="photo.html">앨범 게시판</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="./img/abstract-2829963_1920.png">공지사항</a>
+          </li>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit" style="background-color: lightgreen; color: green;">
+            Search
+          </button>
+          <input class="btn btn-outline-success" name="Login" type="button" value="Login" style="margin-left: 10px;
+              background-color: lightgreen; color: green;" />
+        </form>
+
+      </div>
+    </div>
+  </nav>
+  <div style="margin-top: 15px; margin-left: 75%;">
+    <nav style="
+          --bs-breadcrumb-divider: url(
+            &#34;data:image/svg + xml,
+            %3Csvgxmlns='http://www.w3.org/2000/svg'width='8'height='8'%3E%3Cpathd='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z'fill='currentColor'/%3E%3C/svg%3E&#34;
+          );
+        " aria-label="breadcrumb">
+      <ol class="breadcrumb" style="text-align: right;">
+        <li class="breadcrumb-item active" aria-current="page" ><a href="list.html">Home</a></li>
+        <li class="breadcrumb-item" style="color: black;"><a href="list.html">자유게시판</a></li>
+        <li class="breadcrumb-item active" aria-current="page" style="color: black;">앨범 게시판</li>
+        
+      </ol>
+    </nav>
+  </div>
+  <h1 class="bor1" style="
+        margin-top: 40px;
+        text-align: center;
+        font-family: 'Nanum Pen Script', cursive;
+      ">
+    앨범 게시판</h1>
+    <div class="container">
+      <!-- Content here -->
+      <table class="table table-sm table-dark">
+        <div class="table-responsive">
+          <table class="table align-middle">
+            <thead>
+              <tr>
+                앨범 게시판
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                
+              </tr>
+              <tr class="align-bottom">
+              
+              </tr>
+              <tr>
+                <td><img src="img/png-transparent-attachment-illustration-computer-icons-email-attachment-scalable-graphics-free-email-attachment-miscellaneous-text-logo-removebg-preview.png" style="width: 30px;"></td>
+                <td>인플루엔서</td>
+                <td class="align-top" id="pst1">제주도에서 한컷!</td>
+                <td>19회</td>
+              </tr>
+              <tr>
+                <td colspan="4"><img src="img/제주.jpg" width="400px" id="ptt1"></td>
+              </tr>
+              <tr>
+                <td><img src="img/png-transparent-attachment-illustration-computer-icons-email-attachment-scalable-graphics-free-email-attachment-miscellaneous-text-logo-removebg-preview.png" style="width: 30px;"></td>
+                <td>생각없는</td>
+                <td class="align-top" id="pst2">울산 놀다왔습니다.</td>
+                <td>19회</td>
+              </tr>
+              <tr>
+                <td colspan="4"><img src="img/간절곶.jpg" width="400px" id="ptt2"></td>
+              </tr>
+              <tr>
+                <td><img src="img/png-transparent-attachment-illustration-computer-icons-email-attachment-scalable-graphics-free-email-attachment-miscellaneous-text-logo-removebg-preview.png" style="width: 30px;"></td>
+                <td>홍길동</td>
+                <td class="align-top" id="pst3">어제 핫플레이스 찍어봄</td>
+                <td>19회</td>
+              </tr>
+              <tr>
+                <td colspan="4"><img src="img/동성로.jpg" width="400px" id="ptt3"></td>
+              </tr>
+              <tr>
+                <td><img src="img/png-transparent-attachment-illustration-computer-icons-email-attachment-scalable-graphics-free-email-attachment-miscellaneous-text-logo-removebg-preview.png" style="width: 30px;"></td>
+                <td>소나무</td>
+                <td class="align-top" id="pst4">여기 어때보임?</td>
+                <td>19회</td>
+              </tr>
+              <tr>
+                <td colspan="4"><img src="img/제주.jpg" width="400px" id="ptt4"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </table>
+    </div>
+    <div class="container">
+    <div style="text-align: right; margin-top: 50px;">
+      <button type="submit" class="btn btn-primary"><a href="phosec.html">글쓰기</a></button>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        삭제
+      </button>
+      </div>
+      </div>
+    <div class="container" style="margin-top: 50px;">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item"><a class="page-link" href="#">6</a></li>
+          <li class="page-item"><a class="page-link" href="#">7</a></li>
+          <li class="page-item"><a class="page-link" href="#">8</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  <script>
+    src = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity = "sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin = "anonymous"
+  </script>
+</body>
+
+</html>
