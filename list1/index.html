@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="jquery-3.6.0.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script>
+      $(document).ready(function(){
+      $(".st1").click(function(){
+        $("#ptt1").slideDown("fast");
+      });
+      $("#ptt1").click(function(){
+        $("#ptt1").slideUp("fast");
+      });
+      $(".st2").click(function(){
+        $("#ptt2").slideDown("fast");
+      });
+      $("#ptt2").click(function(){
+        $("#ptt2").slideUp("fast");
+      });
+      $(".st3").click(function(){
+        $("#ptt3").slideDown("fast");
+      });
+      $("#ptt3").click(function(){
+        $("#ptt3").slideUp("fast");
+      });
+      $(".st4").click(function(){
+        $("#ptt4").slideDown("fast");
+      });
+      $("#ptt4").click(function(){
+        $("#ptt4").slideUp("fast");
+      });
+      $(".st5").click(function(){
+        $("#ptt5").slideDown("fast");
+      });
+      $("#ptt5").click(function(){
+        $("#ptt5").slideUp("fast");
+      });
+      $(".st6").click(function(){
+        $("#ptt6").slideDown("fast");
+      });
+      $("#ptt6").click(function(){
+        $("#ptt6").slideUp("fast");
+      });
+    });
+    </script>
+  <style>
+    h4 img {
+      width: 70px;
+    }
+    h2 {
+      margin-top: 80px;
+      width: 500px;
+      text-align: center;
+      margin: auto;
+      border-radius: 10px;
+      padding: 6px;
+      box-shadow: 20px 20px 50px -10px black;
+    }
+    table {
+      margin: auto;
+      margin-top: 80px;
+    }
+    a:link{
+        text-decoration: none;
+      }
+      a:visited{
+        color: red;
+      }
+      a:hover{
+        color: white;
+      }
+      td p{
+      display: none;
+    }
+  </style>
+  <title>자유게시판</title>
+</head>
+
+<body>
+  <h4 style="text-align: center;"><img src="img/제목_없음-removebg-preview.png">여행자를 위한 게시판</h4>
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">자유 게시판</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="photo.html">앨범 게시판</a>
+    </li>
+  </ul>
+  <hr>
+  <h2 style="border: 1px solid silver; background-color: powderblue;">자유 게시판</h2>
+  <div>
+    <table class="table table-striped table-hover" style="width: 60%">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col" style="width: 250px;">글쓴이</th>
+          <th scope="col" style="width: 900px;">제목</th>
+          <th scope="col" style="width: 130px;">조회수</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" class="st1">1</th>
+          <td class="st1">홍길동</td>
+          <td class="st1">에버랜드 사파리 스페셜투어 포스작렬 후기!&nbsp;<span class="badge rounded-pill bg-danger">HOT</span></td>
+          <td class="st1">188회</td>
+        </tr>
+        <tr>
+          <td colspan="4"><p id="ptt1">와이프와 연애할때 가보고 정말 간만에 에버랜드 다녀왔네요. 서율이와도 함께한 첫 에버랜드네요. 그것도 어린이집 땡땡이 치고 가는 에버랜드였죠. 
+            간만에 가는거라 전날부터 너무 설레였단 말이죠 이번에는 놀이기구보다 "사파리 스페셜"를 예전부터 해보고싶었는데 이제서야 하게 되네요. 아주 스페셜한 투어입니다 버스가 아닌 특수 개조된
+            지프차를 타고 전문 사육사님 설명을 들으며 스페셜 투어를 진행하는데 가격도 저렴한 편은 아니지만 한번정도는 꼭 해볼만한 투어에요.
+          </p></td>
+        </tr>
+        <tr>
+          <th scope="row" class="st2">2</th>
+          <td class="st2">Jacob</td>
+          <td class="st2">울산 간절곶카페 시선310 :오션뷰 선셋 노을 완전 추천!!</td>
+          <td class="st2">57회</td> 
+        </tr>
+        <tr>
+          <td colspan="4"><p id="ptt2">경주에 이어 다녀온 국내 여행지는 바로울산. 울산은 정말 오랜만에 다녀왔는데 너무 좋았어요♥ 저희가 다녀온 곳들부터 카페, 맛집까지 다 만족스러웠는데요. 근데. 배터리가 없어서 사진을 제대로 못 찍었어요..</p></td>
+        </tr>
+        <tr>
+          <th scope="row" class="st3">2</th>
+          <td class="st3">꿈나라</td>
+          <td class="st3">20대 커플 여행 추천해주세요!</td>
+          <td class="st3">60회</td>
+        </tr>
+        <tr>
+          <td colspan="4"><p id="ptt3">20대 여행지 추천좀 해주세요!!! 어디로 여행가야할지 모르겠어요.</p></td>
+        </tr>
+        <tr>
+          <th scope="row" class="st4">2</th>
+          <td class="st4">나비</td>
+          <td class="st4">4박 5일 제주여행, 제주도 코스 추천</td>
+          <td class="st4">125회</td>
+        </tr>
+        <tr>
+          <td colspan="4"><p id="ptt4">제주도를 가봤는데 전기차가 대부분이고, 공기도 엄청 맑아요!!</p></td>
+        </tr>
+        <tr>
+          <th scope="row" class="st5">2</th>
+          <td class="st5">사과나무</td>
+          <td class="st5">코로나19 때문에 소도시 여행 추천 부탁드립니다..</td>
+          <td class="st5">80회</td>
+        </tr>
+        <tr>
+          <td colspan="4"><p id="ptt5">코로나19가 터지는 바람에 여행을 미루긴 했는데 작은 소도시 정도는 괜찮을거 같아 여쭤봅니다..</p></td>
+        </tr>
+        </tr>
+      </tbody>
+    </table>
+    <div style="float: right; margin-right: 20%; margin-top: 10px;">
+      <button type="button" class="btn btn-outline-primary"><a href="freesel.html">글쓰기</a></button>
+      <button type="button" class="btn btn-outline-danger">삭제</button>
+    </div>
+  </div>
+  <div style="float: right; margin-right: 15%;">
+    <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item"><a class="page-link" href="#">6</a></li>
+      <li class="page-item"><a class="page-link" href="#">7</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
