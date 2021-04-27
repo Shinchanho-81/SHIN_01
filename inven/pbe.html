@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#dis01").click(function () {
+          $("#dis1").toggle("fast");
+        });
+        $("#dis02").click(function () {
+          $("#dis2").toggle("fast");
+        });
+        $("#dis03").click(function () {
+          $("#dis3").toggle("fast");
+        });
+        $("#dis04").click(function () {
+          $("#dis4").toggle("fast");
+        });
+        $("#dis05").click(function () {
+          $("#dis5").toggle("fast");
+        });
+        $("#dis06").click(function () {
+          $("#dis6").toggle("fast");
+        });
+        $("#dis07").click(function () {
+          $("#dis7").toggle("fast");
+        });
+        $("#dis08").click(function () {
+          $("#dis8").toggle("fast");
+        });
+        $("#dis09").click(function () {
+          $("#dis9").toggle("fast");
+        });
+        $("#dis010").click(function () {
+          $("#dis10").toggle("fast");
+        });
+      });
+    </script>
+    <style>
+      body {
+        background-repeat: no-repeat;
+        background-size: 100% 800px;
+      }
+      #menu01 {
+        margin-top: 40px;
+        text-align: center;
+        background-color: black;
+        border: 1px solid black;
+        border-radius: 2px;
+        width: 200px;
+      }
+      a:link.nav-link {
+        color: white;
+      }
+      a.nav-link {
+        color: white;
+      }
+      a:visited.nav-link {
+        color: white;
+      }
+      ul li {
+        list-style-type: none;
+      }
+      th img {
+        width: 30px;
+      }
+      div img {
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+      a:visited {
+        text-decoration: none;
+      }
+      a:link {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+    </style>
+    <title>리그오브레전드 인벤</title>
+  </head>
+  <body style="background-image: url(img/beemo-top.png)">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light"
+      style="padding: 0px"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="font-family: 'Bangers', cursive"
+          >league of legends</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 4px;
+            padding-right: 4px;
+          "
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">유튜브/방송</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                공략
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="cham.html">챔피언</a></li>
+                <li>
+                  <a class="dropdown-item" href="pbe.html">패치노트 게시판</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">팁과 노하우</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <img
+        src="img/League_of_Legends_logo.png"
+        style="width: 25vh; margin-top: 40px"
+      />
+      <div>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" id="menu01" href="index.html">홈</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="menu01" href="cham.html">챔피언</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="menu01" href="pbe.html">패치노트 게시판</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="menu01">공략</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="menu01">방송/ 유튜브</a>
+          </li>
+        </ul>
+      </div>
+      <div style="text-align: center; margin-top: 10px">
+        <img src="img/pbe.png" />
+        <div
+          style="
+            margin-top: 10px;
+            background-color: whitesmoke;
+            border-radius: 10px;
+          "
+        >
+          <table class="table">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">제목</th>
+                  <th scope="col">글쓴이</th>
+                  <th scope="col">조회</th>
+                  <th scope="col">추천</th>
+                </tr>
+              </thead>
+              <tbody style="text-align: left">
+                <tr id="dis01">
+                  <th scope="row">1</th>
+                  <td>
+                    <img src="img/img_14x12_movie1a.png" /> 4월 16일(수) 11.8
+                    전략적 팀 전투 패치 노트
+                  </td>
+                  <td><img src="img/lv80.gif" /> Eti</td>
+                  <td>2814</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td
+                    colspan="6"
+                    style="display: none; font-family: 'Noto Serif KR', serif"
+                    id="dis1"
+                  >
+                    이미 가장 재미있는 특성 중 하나인 행운 특성에 더 놀라운 것을
+                    추가했습니다. 가장 먼저 새로운 행운 구체에 무엇이 들어있는지
+                    확인하는 분은 누구인지 알려주세요! 반대로, 영혼 특성은
+                    아이템 항목의 변경사항과 함께 약간 하향됩니다. 행운: 3 행운
+                    특성으로 12연패 후 승리 시 새로운 내용물이 포함된 구체를 40%
+                    확률로 획득할 수 있습니다. 행운: 6 행운 특성으로 승리 시
+                    새로운 내용물이 포함된 구체를 4% 확률로 획득할 수 있습니다.
+                    행운: 6 행운 특성으로 승리 시 신발 등장 확률 1% ⇒ 4% 영혼
+                    추가 공격 속도: 20/35% ⇒ 18/30%
+                    <div>
+                      <iframe
+                        width="820"
+                        height="530"
+                        src="https://www.youtube.com/embed/zZpre5IeiXA"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </td>
+                </tr>
+                <tr id="dis02">
+                  <th scope="row">2</th>
+                  <td>
+                    <img src="img/img_14x12_movie1a.png" /> 4월 14일(수) 11.8
+                    패치 노트 (수정)
+                  </td>
+                  <td><img src="img/lv80.gif" /> Eti</td>
+                  <td>12980</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td
+                    colspan="6"
+                    style="display: none; font-family: 'Noto Serif KR', serif"
+                    id="dis2"
+                  >
+                    안녕하세요, 반갑습니다! 이번 패치에서는 다양한 플레이
+                    스타일을 위한 변경사항을 준비했습니다. 새로운 것을 원하는
+                    플레이어 여러분을 위해 협곡에 새롭게 합류한 그웬을
+                    소개합니다. 지난 패치의 우주적 비트가 지겨우신가요?
+                    업데이트된 람머스와 함께 무대를 부숴버리고 더욱 단단해진
+                    껍질을 자랑하세요. 청소를 마치고 싱그러운 봄을 맞이할
+                    아이템이 필요하신가요? 마침 강화형 보조술사를 위한 일부
+                    신화급 아이템을 조정했으니 사용해 보세요. 공격로에서 한동안
+                    등장하지 못했던 든든한 보라색 문도 박사와 과열 장인인 럼블도
+                    공격로에서 만나보실 수 있을 것입니다. 더 자세한 내용은
+                    아래에서 확인해 주시기 바랍니다. 다음 패치에서 뵙겠습니다.
+                    모두 심판 세트가 시작되기 전에 전략적 팀 전투 패치 노트에서
+                    마지막 축제를 즐겨주세요!
+                    <div>
+                      <iframe
+                        width="820"
+                        height="530"
+                        src="https://www.youtube.com/embed/e6riYr95OO4"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </td>
+                </tr>
+                <tr id="dis03">
+                  <th scope="row">3</th>
+                  <td>
+                    <img src="img/img_14x12_movie1a.png" /> 3월31일 (수) 11.7
+                    전략적 팀 전투 패치 노트
+                  </td>
+                  <td><img src="img/lv79.gif" /> Kaka</td>
+                  <td>2234</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td
+                    colspan="6"
+                    style="display: none; font-family: 'Noto Serif KR', serif"
+                    id="dis3"
+                  >
+                    마무리 파티에 오신 것을 환영합니다. 정말 엄청난
+                    축제였습니다! 용, 행운의 등불, 선택받은 자 업데이트,
+                    새로고침 조합, 9레벨 조합 그리고 배불뚝이까지! 경쟁자들이
+                    국제무대에서 최고의 자리를 차지하기 위해 싸우는 운명
+                    챔피언십 패치인 11.6 패치가 확정되었으므로 이제 마무리
+                    파티를 준비할 수 있게 되었습니다! 마무리 파티에서는 지금까지
+                    축제를 잘 즐기지 못했던 챔피언을 상향하여 조금 더 새롭고,
+                    재미있으며 환상적인 승리 조건을 준비했습니다. 마무리 파티를
+                    시작합니다!
+                    <div>
+                      <iframe
+                        width="820"
+                        height="530"
+                        src="https://www.youtube.com/embed/3X9u3rXZUMc"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </td>
+                </tr>
+                <tr id="dis04">
+                  <th scope="row">4</th>
+                  <td>
+                    <img src="img/img_14x12_movie1a.png" /> 3월31일 (수) 11.7
+                    패치 노트
+                  </td>
+                  <td><img src="img/lv79.gif" /> Kaka</td>
+                  <td>2584</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td
+                    colspan="6"
+                    style="display: none; font-family: 'Noto Serif KR', serif"
+                    id="dis4"
+                  >
+                    아직 우울한 겨울에서 헤어나오지 못하셨다 해도 걱정하지
+                    마세요. 활기찬 봄을 여는 우주적 그루브를 준비했습니다. 우선
+                    차가운 바람이 부는 프렐요드로 떠나 꽁꽁 얼어붙은
+                    챔피언(애쉬, 브라움 및 리산드라)을 따듯하게 녹여줍니다.
+                    다음으로 밴들 시티에 방문하여 트리스타나의 대포를 티모에게
+                    건네줍니다. 가끔은 무시무시한 악마도 쓸 때가 있기
+                    때문입니다. 잠시 시간을 내어 음울한 그림자 군도로 이동해
+                    요릭의 기분도 북돋아 줍니다. 요릭에게는 정말 오랜만에 찾아온
+                    손님이겠네요. 마지막으로 하단 공격로에 정차하여 다른
+                    서포터에 비해 압도적인 위력을 자랑하는 서포터 3명을
+                    조정합니다.
+                    <div>
+                      <iframe
+                        width="820"
+                        height="530"
+                        src="https://www.youtube.com/embed/VK0RozLSnc8"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </td>
+                </tr>
+                <tr id="dis05">
+                  <th scope="row">5</th>
+                  <td>
+                    <img src="img/img_14x12_movie1a.png" /> 3월17일 (수) 11.6
+                    전략적 팀 전투 패치 노트
+                  </td>
+                  <td><img src="img/lv79.gif" /> Kaka</td>
+                  <td>28284</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td
+                    colspan="6"
+                    style="display: none; font-family: 'Noto Serif KR', serif"
+                    id="dis5"
+                  >
+                    운명의 챔피언 여러분 환영합니다. 세트 패치를 제외하면 가장
+                    큰 규모의 패치 2개를 적용했으므로 이번 패치에서는 소규모
+                    조정을 통해 세계 대회 시즌의 밸런스를 유지하는 것이
+                    목표입니다. 현재 게임의 밸런스가 상당히 잘 잡혀있어 이번
+                    패치는 소소한 변경사항으로 이루어져 있습니다. 곧 시작될 운명
+                    챔피언십에서 가장 좋아하는 선수를 응원할 기회죠!
+                    <div>
+                      <iframe
+                        width="820"
+                        height="530"
+                        src="https://www.youtube.com/embed/Jw0vyUjYLuU"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </td>
+                </tr>
+                <tr id="dis06">
+                  <th scope="row">6</th>
+                  <td>
+                    <img src="img/img_14x12_movie1a.png" /> 3월17일 (수) 11.6
+                    패치 노트
+                  </td>
+                  <td><img src="img/lv79.gif" /> Kaka</td>
+                  <td>1262</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td
+                    colspan="6"
+                    style="display: none; font-family: 'Noto Serif KR', serif"
+                    id="dis6"
+                  >
+                    11.6 패치와 함께 새 학기가 시작되었습니다! 하지만 걱정하지
+                    마세요. 학기를 위한 요약표를 준비했습니다. 이번 패치의
+                    핵심은 신 짜오를 위한 업데이트와 시스템상의 회복 효과(룬 및
+                    아이템)를 전체적으로 하향하는 것입니다. 전투에서 끈질기게
+                    버티는 것은 괜찮지만 특정 챔피언이 무적이라고 느껴지는 것은
+                    문제죠. 패치 노트를 모두 확인하셨다면 협곡으로 달려가 적
+                    팀을 모두 처치하고 적에게 매운맛을 보여주세요. 그럼 다음
+                    수업 패치에 뵙겠습니다.
+                    <div>
+                      <iframe
+                        width="820"
+                        height="530"
+                        src="https://www.youtube.com/embed/57fSC2a0gQI"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </td>
+                </tr>
+                <tr id="dis07">
+                  <th scope="row">7</th>
+                  <td>
+                    <img src="img/img_14x12_movie1a.png" /> 3월03일 (수) 11.5
+                    전력적 팀 전투 패치 노트
+                  </td>
+                  <td><img src="img/lv79.gif" /> Kaka</td>
+                  <td>59234</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td
+                    colspan="6"
+                    style="display: none; font-family: 'Noto Serif KR', serif"
+                    id="dis7"
+                  >
+                    전략적 팀 전투를 신나게 즐기고 계신 여러분 안녕하세요. 지난
+                    패치에서 세트 중반의 중반 업데이트가 적용되었으므로 이번에는
+                    챔피언 조정을 통해 강력한 조합을 하향하고 큰 성과를 보이지
+                    못하는 조합을 상향했습니다. 거의 모든 지역의 선발전이 이번
+                    패치에서 진행되므로 이번 패치는 극단적인 변경사항 대신
+                    다양한 능력치 조정으로 이루어져 있습니다. 지난 패치처럼 너무
+                    많은 것을 변경하는 것은 지양했습니다. 지난주에 적용된
+                    니달리, 나서스 및 올라프를 위한 변경사항은 추가 패치
+                    노트에서 확인해 주세요.
+                    <div>
+                      <iframe
+                        width="830"
+                        height="520"
+                        src="https://www.youtube.com/embed/Yt4rwk1KAY0"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </td>
+                </tr>
+                <tr id="dis08">
+                  <th scope="row">8</th>
+                  <td>
+                    <img src="img/img_14x12_movie1a.png" /> 3월03일 (수) 11.5
+                    패치 노트
+                  </td>
+                  <td><img src="img/lv79.gif" /> Kaka</td>
+                  <td>8534</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td
+                    colspan="6"
+                    style="display: none; font-family: 'Noto Serif KR', serif"
+                    id="dis8"
+                  >
+                    벌써 11.5 패치를 소개할 시간이 되었네요! 그럼 바로
+                    시작하겠습니다. 먼저 드넓은 정글을 살펴보겠습니다. 마스터
+                    이와 세주아니 같은 챔피언은 교통 체증에 갇혀있으며 반대로
+                    우디르와 람머스는 속도를 최고로 올리고 소환사의 협곡에서
+                    난동을 부리고 있습니다. 전자는 강화하고 우디르와
+                    람머스에게는 제동을 가했습니다. 그 다음은 아이템입니다!
+                    구인수의 격노검에 몇 가지 규칙을 추가하고 세나가 구인수의
+                    격노검을 사용할 때의 효과를 명확하게 정의했습니다. 또한,
+                    무라마나의 정체성을 강화하여 정수 약탈자와 다른 역할을
+                    수행할 수 있도록 했습니다.
+                    <div>
+                      <iframe
+                        width="830"
+                        height="520"
+                        src="https://www.youtube.com/embed/ItJhYrs77gM"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </td>
+                </tr>
+                <tr id="dis09">
+                  <th scope="row">9</th>
+                  <td>
+                    <img src="img/img_14x12_movie1a.png" /> 2월18일 (목) 11.4
+                    전략적 팀 전투 패치 노트
+                  </td>
+                  <td><img src="img/lv79.gif" /> Kaka</td>
+                  <td>22832</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td
+                    colspan="6"
+                    style="display: none; font-family: 'Noto Serif KR', serif"
+                    id="dis9"
+                  >
+                    축제의 리믹스가 시작됩니다! 여러분의 MC, MR.P2가
+                    프리스타일로 준비한 야수의 축제 변경사항을 환영해 주세요.
+                    11.4 패치에서는 선택받은 자 체계의 소규모 업데이트를
+                    적용하고 함께 행운의 등불, 강력한 특성 및 핵심 챔피언을
+                    조정하여 게임 중반에 조합을 바꾸거나 다양한 조합을 활용할 수
+                    있도록 했습니다. 클럽 2의 비트를 올리고 눈이 휘둥그레지는
+                    패치 내용을 확인해 주세요.
+                    <div>
+                      <iframe
+                        width="830"
+                        height="520"
+                        src="https://www.youtube.com/embed/VJPQCDcpuvw"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </td>
+                </tr>
+                <tr id="dis010">
+                  <th scope="row">10</th>
+                  <td>
+                    <img src="img/img_14x12_movie1a.png" /> 2월18일 (목) 11.4
+                    패치 노트
+                  </td>
+                  <td><img src="img/lv79.gif" /> Kaka</td>
+                  <td>28023</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td
+                    colspan="6"
+                    style="display: none; font-family: 'Noto Serif KR', serif"
+                    id="dis10"
+                  >
+                    안녕하세요 플레이어 여러분, 11.4 패치가 도착했습니다! 이번
+                    패치에서는 칼을 휘두르고, 빠르게 돌진하며, 강력한 공격을
+                    퍼붓는 사미라 같은 짧은 사거리의 원거리 챔피언이 강세를
+                    보이고 있는 하단 공격로를 중심으로 살펴봤습니다. 특히 논란의
+                    중심이 되었던 사미라를 조정했습니다. 사미라의 승률은
+                    정상적인 범위를 벗어나지 않았지만 여전히 금지되는 비율이
+                    높으므로 이번 변경사항이 사미라를 조금 더 상대하기 쉽게
+                    만들기를 바라고 있습니다. 또한, 지난번 크라켄 학살자
+                    변경사항 때문에 큰 피해를 입은 카타리나(및 우르곳)의 적중 시
+                    효과 빌드를 다시 활성화했습니다. 아이템 변경으로 피해를 입은
+                    피오라, 리 신 등도 함께 상향됩니다.
+                    <div>
+                      <iframe
+                        width="830"
+                        height="520"
+                        src="https://www.youtube.com/embed/Via9msNvl1c"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </table>
+          <button type="button" class="btn btn-info" style="float: right">
+            <a href="list.html">작성하기</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

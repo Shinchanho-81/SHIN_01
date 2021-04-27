@@ -14,10 +14,46 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+      $("#top1").mouseenter(function(){
+        $("#top1").fadeTo("fast", 0.6);
+      });
+      $("#top1").mouseleave(function(){
+        $("#top1").fadeTo("fast", 1);
+      });
+    });
+    $(document).ready(function(){
+      $("#top2").mouseenter(function(){
+        $("#top2").fadeTo("fast", 0.6);
+      });
+      $("#top2").mouseleave(function(){
+        $("#top2").fadeTo("fast", 1);
+      });
+    });
+    $(document).ready(function(){
+      $("#top3").mouseenter(function(){
+        $("#top3").fadeTo("fast", 0.6);
+      });
+      $("#top3").mouseleave(function(){
+        $("#top3").fadeTo("fast", 1);
+      });
+    });
+    $(document).ready(function(){
+      $("#top4").mouseenter(function(){
+        $("#top4").fadeTo("fast", 0.6);
+      });
+      $("#top4").mouseleave(function(){
+        $("#top4").fadeTo("fast", 1);
+      });
+    });
+    </script>
     <style>
       body {
         background-repeat: no-repeat;
         background-size: 100% 800px;
+        font-weight: bolder;
       }
       #menu01 {
         margin-top: 40px;
@@ -25,7 +61,7 @@
         background-color: black;
         border: 1px solid black;
         border-radius: 2px;
-        width: 130px;
+        width: 200px;
       }
       a:link.nav-link {
         color: white;
@@ -42,6 +78,9 @@
       th img{
         width: 30px;
       }
+      li.p1:hover{
+        font-size: 20px;
+      }
     </style>
     <title>리그오브레전드 인벤</title>
   </head>
@@ -51,7 +90,7 @@
       style="padding: 0px"
     >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#" style="font-family: 'Bangers', cursive"
+        <a class="navbar-brand" href="index.html" style="font-family: 'Bangers', cursive"
           >league of legends</a
         >
         <button
@@ -74,10 +113,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">방송/유튜브</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -88,25 +127,16 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                공략
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="cham.html">챔피언</a></li>
+                <li><a class="dropdown-item" href="pbe.html">패치노트 게시판</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">팁과 노하우</a>
                 </li>
               </ul>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
-              >
             </li>
           </ul>
           <form class="d-flex">
@@ -124,30 +154,30 @@
       </div>
     </nav>
     <div class="container">
-      <img
+      <a href="index.html"><img
         src="img/League_of_Legends_logo.png"
         style="width: 25vh; margin-top: 40px"
-      />
+      /></a>
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link" id="menu01" href="#">홈</a>
+          <a class="nav-link" id="menu01" href="index.html">홈</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="menu01">챔피언</a>
+          <a class="nav-link" id="menu01" href="cham.html">챔피언</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="menu01">카운터픽</a>
+          <a class="nav-link" id="menu01" href="pbe.html">패치노트 게시판</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="menu01">공략</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="menu01">방송/ 유튜브</a>
+          <a class="nav-link" id="menu01" href="yt.html">방송/ 유튜브</a>
         </li>
       </ul>
       <div class="card-group" style="margin-top: 20px;">
         <div class="card">
-          <img src="img/i14628770208.jpg" class="card-img-top" height="221px"/>
+          <img src="img/i14628770208.jpg" class="card-img-top" id="top1" height="221px"/>
           <div class="card-body">
             <h5 class="card-title">[패치] 출시 임박 '그웬'</h5>
             <p class="card-text"></p>
@@ -159,7 +189,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="img/i14326457195.jpg" class="card-img-top" height="221px"/>
+          <img src="img/i14326457195.jpg" class="card-img-top" id="top2" height="221px"/>
           <div class="card-body">
             <h5 class="card-title">전투사관학교 신규 스킨 출시!</h5>
             <p class="card-text">
@@ -171,7 +201,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="img/다운로드.png" class="card-img-top" height="221px"/>
+          <img src="img/다운로드.png" class="card-img-top" id="top3" height="221px"/>
           <div class="card-body">
             <h5 class="card-title">[패치] 우디르 너프부터 무라마나 변경까지!</h5>
             <p class="card-text">
@@ -183,7 +213,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="img/i15372732006.jpg.crdownload" class="card-img-top" height="221px"/>
+          <img src="img/shin.jpg.crdownload" class="card-img-top" id="top4" height="221px"/>
           <div class="card-body">
             <h5 class="card-title">[패치] 신 짜오&아칼리 소규모 리워크 적용!</h5>
             <p class="card-text">
@@ -195,39 +225,42 @@
           </div>
         </div>
       </div>
-      <div style="margin-top: 5vh; width: 500px; float: left; margin-left: 10vh;  border: 1px solid silver; padding: 10px;">
+      <div class="container">
+      <div style="margin-top: 5vh; width: 57vh; float: left; margin-left: 10vh;  border: 1px solid silver; padding: 10px; border-radius: 7px;">
         <h5 style="font-weight: bolder;">LoL 실시간 유저 정보</h5>
         <hr>
         <ul>
-          <li>[정보] 4대리그+MSI 정리글</li>
-          <li>[대회소식] psg 원딜 msi 기흉으로 불참</li>
-          <li>[정보] 2021 미드시즌 파랑정수 상점 크로마..</li>
-          <li>[정보] 2021년 4월 챔피언 업데이트 현황</li>
-          <li>[대회소식] Ldl중국2부리그 재개</li>
-          <li>[정보] 그웬 6300bp로 가격인하 되었습니다.</li>
-          <li>[정보] 중국에서 챔피언 로드맵 유출됨</li>
-          <li>[PBE]담원 게이밍 스킨 정예 크로마팩</li>
-          <li>[대회소식] Msi포맷공개</li>
+          <li class="pa1">[정보] 4대리그+MSI 정리글</li>
+          <li class="pa1">[대회소식] psg 원딜 msi 기흉으로 불참</li>
+          <li class="pa1">[정보] 2021 미드시즌 파랑정수 상점 크로마..</li>
+          <li class="pa1">[정보] 2021년 4월 챔피언 업데이트 현황</li>
+          <li class="pa1">[대회소식] Ldl중국2부리그 재개</li>
+          <li class="pa1">[정보] 그웬 6300bp로 가격인하 되었습니다.</li>
+          <li class="pa1">[정보] 중국에서 챔피언 로드맵 유출됨</li>
+          <li class="pa1">[PBE]담원 게이밍 스킨 정예 크로마팩</li>
+          <li class="pa1">[대회소식] Msi포맷공개</li>
         </ul>
       </div>
-      <div style="float: right; margin-top: 5vh;width: 500px; margin-right: 10vh; border: 1px solid silver; padding: 10px;">
+      <div style="float: right; margin-top: 5vh;width: 58vh; margin-right: 10vh; border: 1px solid silver; padding: 10px; border-radius: 7px;">
         <h5 style="font-weight: bolder;">LoL 팁과 노하우</h5>
         <hr>
         <ul>
-          <li>[일반] 제라스 Q플 하는 방법</li>
-          <li>[일반] 그웬 패시브 회복 버그 실험 정리본</li>
-          <li>[일반] 극 소소한 야스오 팁</li>
-          <li>[일반] 탑라이너 생각하면서 해야할 몇가지 팁</li>
-          <li>[아이템] [분석] 패치 전후 유틸폿 통계비교</li>
-          <li>[가이드] 세계에서 정글 제일 잘도는 엘리스가 정글링..</li>
-          <li>[가이드] 슬슬 픽률 올라가는 킨드레드 정글 100%</li>
-          <li>[일반] 우디르 가장 빠른 초반 정글링 동선 강좌</li>
-          <li>[가이드] 롤 강의 for 서폿 (극초반)</li>
+          <li class="pa1">[일반] 제라스 Q플 하는 방법</li>
+          <li class="pa1">[일반] 그웬 패시브 회복 버그 실험 정리본</li>
+          <li class="pa1">[일반] 극 소소한 야스오 팁</li>
+          <li class="pa1">[일반] 탑라이너 생각하면서 해야할 몇가지 팁</li>
+          <li class="pa1">[아이템] [분석] 패치 전후 유틸폿 통계비교</li>
+          <li class="pa1">[가이드] 세계에서 정글 제일 잘도는 엘리스가 정글링..</li>
+          <li class="pa1">[가이드] 슬슬 픽률 올라가는 킨드레드 정글 100%</li>
+          <li class="pa1">[일반] 우디르 가장 빠른 초반 정글링 동선 강좌</li>
+          <li class="pa1">[가이드] 롤 강의 for 서폿 (극초반)</li>
         </ul>
+      </div>
       </div>
       <div style="float: left; margin-top: 5vh;">
         <h5 style="font-weight: bolder; margin-bottom: 10px;">리그오브레전드 프로 빌더</h5><hr>
         <table class="table" style="width: 80vh">
+          <table class="table table-hover">
           <thead class="table-light">
             <tr>
               <th>시간</th>
@@ -324,6 +357,7 @@
               <th colspan="6" style="background-color: silver; text-align: center;">더보기 +</th>
             </tr>
           </tbody>
+          </table>
         </table>
       </div>
       <div style="float: right; margin-top: 5vh;">
